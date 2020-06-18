@@ -1,0 +1,88 @@
+.main-container{
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.6) /*#f0f0f5*/;
+    padding: 0 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.main-container section{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1%;
+}
+
+.main-container section .section-img{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.main-container section .section-img img{
+    height: 100px;
+    margin-top: 3%;
+}
+
+.main-container section nav{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container section nav div{
+    width: 80%;
+    display: flex;
+}
+
+.main-container section nav div + div{
+    width: 20%;
+}
+
+.main-container section nav a{
+    width: auto;
+    padding:2%;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    color: #c09457;
+    border-bottom: 1px solid transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-container section nav a:hover{
+    color: #b88743;
+    border-bottom: 1px solid #b88743;
+}
+
+.main-container section nav button{
+    color: rgba(34, 34, 34, 0.6);
+    width: 200px;
+    font-size: 20px;
+    background-color: #c09457;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3%;
+    outline: none;
+    border: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main-container section nav button:hover{
+    background-color: #b88743;
+}

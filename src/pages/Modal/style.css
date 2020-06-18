@@ -1,0 +1,142 @@
+.modal-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(34, 34, 34, 0.6);
+}
+
+.modal-container.on{
+    display: flex;
+}
+
+.modal-container section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1%;
+    align-items: center;
+}
+
+.modal-container section title{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.modal-container section form{
+    display:  flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 5%;
+    background-color: #333333af;
+    border-radius: 3px;
+    box-shadow: -5px 5px 20px rgba(34, 34, 34, 0.6);
+    font-size: 18px;
+}
+
+.modal-container section form a{
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: -5%;
+    margin-top: -6%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.modal-container section form label{
+    color: #c09457;
+    font-weight: 500;
+    padding: 1% 0;
+}
+
+.modal-container section form input{
+    border: none;
+    padding: 1%;
+    outline: none;
+    border-radius: 3px;
+    color: 333333af;
+}
+
+.modal-container section form button{
+    min-width: 40%;
+    text-align: center;
+    padding: 2% 10%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c09457;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-container section form button:hover{
+    background-color: #b88743;
+}
+
+.modal-container section form.login div{
+    display:  flex;
+    justify-content: space-between;
+    padding:2% 0;
+} 
+
+.modal-container section form.login div a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 2% 1%;
+}
+
+/* animations forms */
+
+
+.modal-container section form.login{
+    opacity: 0;
+    transform: translate3d(0, -1000px,0);
+    transition: 1s;
+}
+
+.modal-container section form.registration{
+    opacity: 0;
+    transform: translate3d(-1000px, -8% ,0);
+    transition: 1s;
+}
+
+.modal-container section form.forgot{
+    opacity: 0;
+    transform: translate3d(1000px, -135% ,0);
+    transition: 1s;
+}
+
+.modal-container section form.login.on{
+    transform: translate3d(0, 100%, 0);
+    opacity: 1;
+    transition: 1s;
+}
+
+.modal-container section form.registration.on{
+    transform: translate3d(0, -8% ,0);
+    opacity: 1;
+    transition: 1s;
+}
+
+.modal-container section form.forgot.on{
+    transform: translate3d(0, -135% ,0);
+    opacity: 1;
+    transition: 1s;
+}

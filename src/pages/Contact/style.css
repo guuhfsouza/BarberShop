@@ -1,0 +1,98 @@
+.contact-container{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../images/working.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2%;
+}
+
+.contact-container section{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container section title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.contact-container section title h1{
+    width: auto;
+    color: #ffffff;
+}
+
+.contact-container section .contact-contacts{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(34, 34, 34, 0.6) ;
+    padding: 5%;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-container section .contact-hours-weeking{
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    background-color: rgba(34, 34, 34, 0.6) ;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact-container section .contact-hours-weeking .contact-hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: 1px solid #C09457;
+    border-radius: 3px;
+    margin: 1% 1% 1% 0;
+    color: #ffffff;
+}
+
+.contact-container section .contact-hours-weeking .contact-hours p{
+    font-size: 18px;
+    padding: 2% 0;
+}
+
+.contact-container section div{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    justify-content: center;
+}
+
+.contact-container section div + div{
+    margin-top: 0;
+    justify-content: center;
+}
+
+.contact-container section div strong{
+    color: #C09457;
+    font-size: 18px; 
+    margin-right: 2%;
+}
+
+.contact-container section div p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+
+    
+}

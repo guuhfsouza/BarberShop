@@ -1,0 +1,28 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home-content section:first{
+    width: 40%;
+}
+
+.home-content section + section{
+    width: 100%;
+}
+
+.home-container header{
+    width: 100%;
+    background-image: url('../../images/working.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: auto;
+    height: 100vh;
+}
