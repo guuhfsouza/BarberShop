@@ -28,8 +28,8 @@ function Modal(){
      return(
         <div className="modal-container" name='modalCustomerRegistration'>
             <section>         
-                <form className='login on' name='login'>
-                    <a onClick={openRegistrationCloseLogin}>X</a>
+                <form className='login' name='login'>
+                    <a href="#" onClick={openRegistrationCloseLogin}>X</a>
                     <title>
                         <h1>Login</h1>
                     </title>   
@@ -39,15 +39,15 @@ function Modal(){
                     <input placeholder="Senha" type='password'></input>
                     <button>Entrar</button>
                     <div >
-                        <a onClick={e=> openRegistrationCloseLogin('register')}>Primeiro acesso?</a>
-                        <a onClick={e=> openRegistrationCloseLogin('forgot')}>Redefinir Senha</a>
+                        <a href="#" onClick={e=> openRegistrationCloseLogin('register')}>Primeiro acesso?</a>
+                        <a href="#" onClick={e=> openRegistrationCloseLogin('forgot')}>Redefinir Senha</a>
                     </div>            
                 </form>
             </section>
             {/* Novo Cadastro de cliente */}
             <section>
                 <form className="registration" name='registration'>
-                <a onClick={e=> openRegistrationCloseLogin('register')}>X</a>
+                <a href="#" onClick={e=> openRegistrationCloseLogin('register')}>X</a>
                     <title>
                         <h1>Cadastro</h1>
                     </title>            
@@ -66,7 +66,7 @@ function Modal(){
             {/* Recuperar Senha */}
             <section>         
                 <form className='forgot' name='forgot'>
-                    <a onClick={e=> openRegistrationCloseLogin('forgot')}>X</a>
+                    <a href="#" onClick={e=> openRegistrationCloseLogin('forgot')}>X</a>
                     <title>
                         <h1>Recuperar Senha</h1>
                     </title>   

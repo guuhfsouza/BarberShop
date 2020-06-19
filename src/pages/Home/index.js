@@ -5,6 +5,7 @@ import About from '../About'
 import Rendered from '../Rendered'
 import Contact from '../Contact'
 import Modal from '../Modal';
+import Footer from '../Footer';
 
 //import Logo from '../../assets/logo.ico'  
 
@@ -27,6 +28,7 @@ function Home (){
                     <About/>
                     <Rendered/>
                     <Contact/>
+                    <Footer/>
                 </section>
             </div>
             <Modal/>

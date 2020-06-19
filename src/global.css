@@ -19,3 +19,7 @@ title::after{
     height: 4px;
     width: 50px;
 }
+
+a{
+    text-decoration: none;
+}

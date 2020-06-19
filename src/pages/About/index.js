@@ -5,7 +5,7 @@ import  './style.css'
 
 function About(){
     return(
-        <div className='about-container'>
+        <div className='about-container' name='aboutSection'>
             <section>
                 <title>
                     <h1>Sobre Nós</h1>
