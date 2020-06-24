@@ -7,8 +7,9 @@ import './style.css';
 import openModalCustomerRegistration from '../../scripts/Animations/openModalCustomerRegistration'
 import smoothingScrollTo from '../../scripts/Animations/smoothingScrollTo';
 
-
 function Main(){
+
+
     function scroolTo(selectedSection = 'pageTop'){
         if(selectedSection === 'about'){
             const about = document.getElementsByClassName("about-container");
@@ -29,13 +30,14 @@ function Main(){
     }
 
     return(
-        <div className="main-container">
+        <div className="main-container" name='main'>
             <section>
                 {/* <div className="section-img">
                     <img src={Logo} alt='Logo' />
                 </div> */}
                 <nav>
                     <div>
+                        <a onClick={e => scroolTo()}>Home</a>
                         <a onClick={e => scroolTo('about')}>Sobre Nós</a>
                         <a onClick={e => scroolTo('service')}>Serviços</a>
                         <a onClick={e => scroolTo('contact')}>Contatos</a>

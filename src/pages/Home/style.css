@@ -26,3 +26,44 @@
     height: auto;
     height: 100vh;
 }
+
+.button-top-return{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.button-top-return.on{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 2%;
+    left: auto;
+    right: 2%;
+    top: auto;
+    box-shadow: -3px -1px 15px #141412;
+    z-index: 100;
+    border-radius: 2px;
+    opacity: 1;
+    transition: 0.8s;
+}
+
+.button-top-return.on button{
+    width: 100%;
+    height: 100%;
+    background-color: #c09457;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-top-return.on button:hover{
+    background-color: #b88743;
+}

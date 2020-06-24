@@ -49,6 +49,7 @@
 
 .main-container section nav a{
     width: auto;
+    display: flex;
     padding:2%;
     margin-left: 2px;
     margin-right: 2px;
@@ -66,7 +67,7 @@
 
 .main-container section nav button{
     color: rgba(34, 34, 34, 0.6);
-    width: 200px;
+    width: 150px;
     font-size: 20px;
     background-color: #c09457;
     text-transform: uppercase;
