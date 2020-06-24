@@ -1,3 +1,7 @@
+//adciona o vento de scroll na tela.
+window.addEventListener('scroll', appearButtonScrollTop);
+
+
 function appearButtonScrollTop(){
     const myPageScrollPoint = document.documentElement.scrollTop;
     const aboutSectionPosition = document.querySelector('div [name=aboutSection]')

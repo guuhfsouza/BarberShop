@@ -1,4 +1,26 @@
-function smoothScrollTo(endX, endY, duration) {
+
+//função que determina até qual section quero ir
+function scrollTo(selectedSection = 'pageTop'){
+    if(selectedSection === 'about'){
+        const about = document.getElementsByClassName("about-container");
+        smoothingScrollTo(0, about[0].offsetTop, 1000)
+    }
+    else if(selectedSection === 'service'){
+        const service = document.getElementsByClassName("rendered-container");
+        smoothingScrollTo(0, service[0].offsetTop, 1000)
+    }
+    else if(selectedSection === 'contact'){
+        const contact = document.getElementsByClassName("contact-container");
+        smoothingScrollTo(0, contact[0].offsetTop, 1000)
+    }
+    else{
+        const myPageTop = document.documentElement.offsetTop;
+        smoothingScrollTo(0, myPageTop, 1000)
+    }
+}
+
+//função que suaviza o scrool até a section selecionada
+function smoothingScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
     const distanceX = endX - startX;
@@ -25,5 +47,4 @@ function smoothScrollTo(endX, endY, duration) {
   };
 
 
-
-export default smoothScrollTo;
+export default scrollTo;
