@@ -1,0 +1,186 @@
+.client-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/client-area.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client-container section{
+    border-radius: 3px;
+    background-color: rgba(34, 34, 34, 0.6);
+    padding: 1%;
+}
+
+.client-container .client-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18%;
+    /* min-width: auto; */
+    margin: 1%;
+}
+
+.client-container title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.client-container title h1{
+    text-align: center;
+}
+
+.client-container .client-main nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 10%;
+}
+
+.client-container .client-main nav a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 2%;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 1px solid transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.client-container .client-main nav a:hover{
+    border-bottom: 1px solid #b88743;
+}
+
+.client-content {
+    display: flex;
+    margin: 1% 1% 1% auto;
+    width: 79% ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-content .schedule-client.off{
+    display: none;
+}
+
+.client-content .schedule-client{
+    width: 80%;
+    border: none;
+}
+
+.client-content .schedule-client ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 4%;
+    font-size: 18px;
+}
+
+.client-content .schedule-client ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 30%;
+    min-height: 150px;;
+    width: auto; 
+    padding: 1%;
+    margin: 1%;
+    list-style: none;
+    border: 2px solid #C09457;
+    border-radius: 3px;
+}
+
+.client-content .schedule-client ul li header{
+    color: #c09457;
+}
+
+.client-content .schedule-client ul li section{
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-top: 10%;
+}
+
+.client-content .schedule-client ul li section p{
+    padding: 2px 0;
+}
+
+.client-content .scheduling-client.off{
+    display: none;
+}
+
+.client-content .scheduling-client{
+    width: 80%;
+    border: none;
+    display: flex;
+    /* border: 2px solid #C09457; */
+    border-radius: 3px;
+}
+
+.client-content .scheduling-client form{
+    /* background-color: #ffffff; */
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
+}
+
+.client-content .scheduling-client form label{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 2% 0;
+}
+
+.client-content .scheduling-client form input, 
+.client-content .scheduling-client form select{
+    display: flex;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    text-overflow: '';
+    border: none;
+    outline: none;
+    padding: 1% 2%;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.client-content .scheduling-client form select option{
+    background-color: black;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.client-content .scheduling-client form button{
+    color: rgba(34, 34, 34, 0.6);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #c09457;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1%;
+    outline: none;
+    border: none;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 2px;
+}

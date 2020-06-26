@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom'
 
 import '../../global.css'
 import './style.css'
 
 function Modal(){
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const history = useHistory();
+
     function openRegistrationCloseLogin(typeAnimation){
 
         const modal = document.querySelector('div [name=modalCustomerRegistration]')
@@ -24,19 +30,27 @@ function Modal(){
         else    
             modal.classList.toggle('on')
     }
+
+    function handleLoginValidation(){
+        if(email === 'gustavo' && password ==='123456'){
+            history.push('/client-area');
+        }   
+        else
+            alert('Usuário não encontrado')
+    }
     
      return(
         <div className="modal-container" name='modalCustomerRegistration'>
             <section>         
-                <form className='login' name='login'>
+                <form className='login' name='login' onSubmit={handleLoginValidation}>
                     <a href="#" onClick={openRegistrationCloseLogin}>X</a>
                     <title>
                         <h1>Login</h1>
                     </title>   
                     <label>E-mail</label>
-                    <input placeholder="E-mail"></input>
+                    <input placeholder="E-mail" value={email} onChange={ e => setEmail(e.target.value)}></input>
                     <label>Senha</label>
-                    <input placeholder="Senha" type='password'></input>
+                    <input placeholder="Senha" type='password' value={password} onChange={ e => setPassword(e.target.value)}></input>
                     <button>Entrar</button>
                     <div >
                         <a href="#" onClick={e=> openRegistrationCloseLogin('register')}>Primeiro acesso?</a>
