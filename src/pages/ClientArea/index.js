@@ -1,30 +1,14 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 
 import './style.css'
 import '../../global.css'
 
+import appearOptionsAreaClient from '../../scripts/Animations/appearOptionsAreaClient';
 
 function ClientArea(){
-
     const vector = [1,2,3,4,5];
-
-
-    function showSelectedSectionInMenu(event){
-        const scheduleClient = document.querySelector('fieldset[name=schedule-client]');
-        const schedulingClient = document.querySelector('fieldset[name=scheduling-client]')
-
-        console.log( event.target.dataset.id)
-
-        if(event.target.dataset.id == 'minha agenda'){
-            scheduleClient.classList.remove('off')
-            schedulingClient.classList.add('off')
-        }
-        else if(event.target.dataset.id == 'novo agendamento'){
-            scheduleClient.classList.add('off')
-            schedulingClient.classList.remove('off')
-        }
-    }
-
+    const history = useHistory();
 
     return(
         <div className="client-container">
@@ -33,9 +17,9 @@ function ClientArea(){
                     <h1>Menu</h1>
                 </title>
                 <nav>
-                    <a onClick={showSelectedSectionInMenu} data-id="minha agenda">Minha agenda</a>
-                    <a onClick={showSelectedSectionInMenu} data-id="novo agendamento">Novo Agendamento</a>
-                    <a>Sair</a>
+                    <a onClick={appearOptionsAreaClient} data-id="minha agenda" name='agenda'>Minha agenda</a>
+                    <a onClick={appearOptionsAreaClient} data-id="novo agendamento" name='agendamento'>Novo Agendamento</a>
+                    <a onClick={e => history.push('/')}>Sair</a>
                 </nav>
             </section>
             <section className="client-content">
